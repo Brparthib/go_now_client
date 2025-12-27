@@ -1,12 +1,19 @@
-import { Button } from "@/components/ui/button";
+import CTA from "@/components/modules/Home/CTA";
+import Features from "@/components/modules/Home/Features";
+import Hero from "@/components/modules/Home/Hero";
+import HowItWorks from "@/components/modules/Home/HowItWorks";
+import Stats from "@/components/modules/Home/Stats";
+import Testimonial from "@/components/modules/Home/Testimonial";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center gap-4">
-      <h1 className="text-5xl text-blue-500 text-center">Welcome to GoNow</h1>
-      <Button size="sm" variant="outline" className="mx-auto cursor-pointer">
-        Travel
-      </Button>
-    </div>
+    <>
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Stats />
+      <Testimonial />
+      <CTA />
+    </>
   );
 }
